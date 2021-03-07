@@ -14,7 +14,14 @@
 <body>
     <h1>My first page with Java Spring FrameWork</h1>
     <a href="/about">ABOUT</a>
-    <form action="/process" method="get">
+
+    <c:forEach items="${users}" var = "u">
+        <h1>
+            ${u.id} - ${u.name} - ${u.surName} - ${u.age} years old <a href="readmore/${u.id}">Read More</a>
+        </h1>
+    </c:forEach>
+
+    <form action="/adduser" method="post">
         Name: <input type="text" name="name">
         SurName: <input type="text" name="surname">
         Age: 
