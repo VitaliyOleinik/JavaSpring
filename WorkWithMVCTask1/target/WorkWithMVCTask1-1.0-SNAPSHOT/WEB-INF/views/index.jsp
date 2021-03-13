@@ -2,9 +2,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Main</title>
 </head>
     <body>
-
+        <a href="/all_books">All Books</a>
     </body>
 </html>
