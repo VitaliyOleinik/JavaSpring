@@ -8,8 +8,8 @@ public class DBManager {
 
     static {
         allBooks.add(new Books(1L, "Rich dad and poor dad", "R.Kiyosaki", 50));
-        allBooks.add(new Books(2L, "Java EE", "Herbert Shield", 100));
-        allBooks.add(new Books(3L, "Java EE", "Vitaliy Oleinik", 75));
+        allBooks.add(new Books(2L, "JavaEE", "Herbert Shield", 100));
+        allBooks.add(new Books(3L, "Java", "Vitaliy Oleinik", 75));
         allBooks.add(new Books(4L, "Abay’s road", "Mukhtar Auezov", 80));
     }
 
@@ -23,12 +23,13 @@ public class DBManager {
         return allBooks;
     }
 
-    public static Books getBookByName(String name){
+    public static ArrayList<Books> getBookByName(String name){
+        ArrayList<Books>searchedBooks = new ArrayList<>();
         for(Books book: allBooks){
             if(book.getName().equals(name)){
-                return book;
+                searchedBooks.add(book);
             }
         }
-        return null;
+        return searchedBooks;
     }
 }
