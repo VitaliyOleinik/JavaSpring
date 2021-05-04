@@ -11,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ProcessController {
     @RequestMapping(value = "/process", method = RequestMethod.GET)
+    // RequestParam принимает данные из формы с полями name, surname, age
     public ModelAndView toProcess(@RequestParam(name = "name", defaultValue = "No Name")String name,
                                     @RequestParam(name = "surname", required = false, defaultValue = "No SurName") String surName,
                                     @RequestParam(name = "age", required = false, defaultValue = "0") int age){
@@ -26,6 +27,6 @@ public class ProcessController {
                           @RequestParam(name = "surname", required = false, defaultValue = "No SurName") String surName,
                           @RequestParam(name = "age", required = false, defaultValue = "0") int age){
         DBManager.addUser(new User(null, name, surName, age));
-        return "redirect:/";
+        return "redirect:/adduser";
     }
 }

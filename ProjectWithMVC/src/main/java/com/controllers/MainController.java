@@ -29,6 +29,12 @@ public class MainController {
         return mw;
     }
 
+    @RequestMapping(value = "adduser", method = RequestMethod.GET)
+    public ModelAndView addUserPage(){
+        ModelAndView mw = new ModelAndView("adduser");
+        return mw;
+    }
+
     @RequestMapping(value = "/readmore/{userId}", method = RequestMethod.GET)
     public ModelAndView readMore(@PathVariable(name = "userId") Long id){
         User user = DBManager.getuserById(id);
