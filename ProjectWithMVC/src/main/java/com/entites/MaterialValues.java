@@ -1,23 +1,23 @@
 package com.entites;
 
 public class MaterialValues {
-    private long id;
+    private Long id;
     private String name;
     private int cost;
     private int total;
 
-    public MaterialValues(long id, String name, int cost, int total) {
+    public MaterialValues(Long id, String name, int cost, int total) {
         this.id = id;
         this.name = name;
         this.cost = cost;
         this.total = total;
     }
 
-    public MaterialValues(long id, String name, int cost) {
+    public MaterialValues(Long id, String name, int cost) {
         this(id, name, cost, 0);
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 

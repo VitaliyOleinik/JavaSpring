@@ -16,12 +16,14 @@
     <form action="/adduser" method="post">
         Name: <input type="text" name="name">
         SurName: <input type="text" name="surname">
-        Age:
-        <select name="age">
-            <c:forEach var="i" begin="1" end="100">
-                <option>${i}</option>
-            </c:forEach>
-        </select>
+        Patronymic: <input type="text" name="patronymic">
+
+<%--        Age:--%>
+<%--        <select name="age">--%>
+<%--            <c:forEach var="i" begin="1" end="100">--%>
+<%--                <option>${i}</option>--%>
+<%--            </c:forEach>--%>
+<%--        </select>--%>
         <button>ADD USER</button>
     </form>
     <a href="/">BACK</a>

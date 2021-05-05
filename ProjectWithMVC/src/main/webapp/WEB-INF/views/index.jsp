@@ -14,29 +14,41 @@
     <style>
         table{
             margin: auto;
-            border: 1px solid dimgray;
             width: 600px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        a{
+            margin: auto;
         }
     </style>
 </head>
 <body>
-    <h1>My first page with Java Spring FrameWork</h1>
     <h2 align="center">Список сотрудников</h2>
     <a href="/about">ABOUT</a>
+    <a href="/adduser">ADD USER</a>
+    <a href="/addMaterialValue">ADD MATERIAL VALES</a>
+    <table>
 
-    <c:forEach items="${users}" var = "u">
-        <table>
-            <tr>
-                <td>
         <h1>
-                ${u.id} - ${u.name} - ${u.surName} - <a href="/">${u.age}</a> years old <a href="readmore/${u.id}">Read More</a>
-        </h1>
-                </td>
+<%--                ${u.id} - ${u.name} - ${u.surName} - <a href="/">${u.age}</a>
+                    years old <a href="readmore/${u.id}">Read More</a>--%>
+            <tr>
+                <th>ФИО</th>
+                <th>Кол-во</th>
+                <th>Общая стоимость</th>
             </tr>
-        </table>
+    <c:forEach items="${users}" var = "u">
+            <tr>
+                <td><a href="/readmore/${u.id}">${u.name} ${u.surname.charAt(0)}. ${u.patronymic.charAt(0)}.</a></td>
+                <td><a href="/readMaterialValues/${u.id}">${u.cnt}</a></td>
+                <td>${u.totalCost}</td>
+            </tr>
+        </h1>
     </c:forEach>
 
-    <a href="/adduser">ADD USER</a>
+    </table>
 
 
 </body>

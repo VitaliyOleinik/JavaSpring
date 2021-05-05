@@ -1,7 +1,8 @@
 package com.controllers;
 
 import com.db.DBManager;
-import com.db.User;
+import com.entites.MaterialValues;
+import com.entites.Person;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,10 +17,19 @@ public class MainController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     // если обращаемся к этой ссылке, то запускатся этот метод
     public ModelAndView indexPage(){
-        ArrayList<User>allUsers = DBManager.getAllusers();
+//        ArrayList<User>allUsers = DBManager.getAllusers();
+        ArrayList<Person>allPersons = DBManager.getAllPersons();
         // путь к jsp
         ModelAndView mw = new ModelAndView("index");
-        mw.addObject("users", allUsers);
+        mw.addObject("users", allPersons);
+        return mw;
+    }
+
+    @RequestMapping(value = "addMaterialValue/{userId}", method = RequestMethod.GET)
+    public ModelAndView addMaterialValuesPage(){
+        ArrayList<MaterialValues>allMV = DBManager.getAllMaterialValues();
+        ModelAndView mw = new ModelAndView("addMaterialValue");
+        mw.addObject("materialValues", allMV);
         return mw;
     }
 
@@ -37,9 +47,9 @@ public class MainController {
 
     @RequestMapping(value = "/readmore/{userId}", method = RequestMethod.GET)
     public ModelAndView readMore(@PathVariable(name = "userId") Long id){
-        User user = DBManager.getuserById(id);
+        Person person = DBManager.getPersonById(id);
         ModelAndView mw = new ModelAndView("readMore");
-        mw.addObject("user", user);
+        mw.addObject("person", person);
         return mw;
     }
 }

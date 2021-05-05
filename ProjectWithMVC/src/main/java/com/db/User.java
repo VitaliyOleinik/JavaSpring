@@ -1,11 +1,12 @@
 package com.db;
 
+import com.entites.MaterialValues;
+
 public class User {
     private Long id;
     private String name;
     private String surName;
     private int age;
-
     public User() {
     }
 
