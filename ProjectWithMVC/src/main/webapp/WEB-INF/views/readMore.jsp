@@ -24,6 +24,7 @@
         <h3>Фамилия: ${person.surname}</h3>
         <h3>Имя: ${person.name}</h3> ${p}
         <h3>Отчество: ${person.patronymic}</h3>
+        <h3>${person.cnt}</h3>
         <h3>Список выданных материальных ценностей:</h3>
         <table>
             <h1>
@@ -34,10 +35,7 @@
                     <th>Название</th>
                     <th>Стоимость</th>
                 </tr>
-<%--                <c:forEach items="${users}" var = "u">--%>
-                    <%
 
-                    %>
                 <tr>
 
                 </tr>

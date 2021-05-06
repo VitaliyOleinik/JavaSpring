@@ -42,7 +42,7 @@
     <c:forEach items="${users}" var = "u">
             <tr>
                 <td><a href="/readmore/${u.id}">${u.name} ${u.surname.charAt(0)}. ${u.patronymic.charAt(0)}.</a></td>
-                <td><a href="/readMaterialValues/${u.id}">${u.cnt}</a></td>
+                <td>${u.cnt}</td>
                 <td>${u.totalCost}</td>
             </tr>
         </h1>

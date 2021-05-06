@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class DBManager {
     private static ArrayList<Person>allPersons = new ArrayList<>();
     private static ArrayList<MaterialValues>allMaterialValues = new ArrayList<>();
+    private static Person person;
 
     private static Long idForPerson = 1L;
     private static Long idForMV = 1L;
@@ -19,11 +20,11 @@ public class DBManager {
         idForPerson++;
     }
 
-    public static void addMaterialValue (MaterialValues v){
-        v.setId(idForMV);
-        allMaterialValues.add(v);
-        idForMV++;
-    }
+//    public static void addMaterialValue (MaterialValues v){
+//        v.setId(idForMV);
+//        person.personMaterialValues.add(v);
+//        person.idForMV++;
+//    }
 
     public static ArrayList<Person>getAllPersons() { return allPersons; }
     public static ArrayList<MaterialValues>getAllMaterialValues() { return allMaterialValues; }

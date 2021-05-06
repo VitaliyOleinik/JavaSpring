@@ -1,19 +1,23 @@
 package com.entites;
 
+import java.util.ArrayList;
+
 public class Person {
     private Long id;
     private String name;
     private String surname;
     private String patronymic;
-    private int cnt;
+    private static int cnt = 0;
     private int totalCost;
+    private static final ArrayList<MaterialValues> personMaterialValues = new ArrayList<>(10);
+    private static int sizeOfMV = 0;
 
     public Person(Long id, String name, String surname, String patronymic, int cnt, int totalCost) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.patronymic = patronymic;
-        this.cnt = cnt;
+        Person.cnt = cnt;
         this.totalCost = totalCost;
     }
 
@@ -60,8 +64,8 @@ public class Person {
         return cnt;
     }
 
-    public void setCnt(int cnt) {
-        this.cnt = cnt;
+    public static void setCnt(int cnt) {
+        Person.cnt = cnt;
     }
 
     public int getTotalCost() {
@@ -70,6 +74,15 @@ public class Person {
 
     public void setTotalCost(int totalCost) {
         this.totalCost = totalCost;
+    }
+
+    public static void addMaterialValues(MaterialValues value){
+        if(sizeOfMV < personMaterialValues.size()){
+            personMaterialValues.add(value);
+            sizeOfMV++;
+            cnt++;
+            setCnt(Person.cnt);
+        }
     }
 
     @Override

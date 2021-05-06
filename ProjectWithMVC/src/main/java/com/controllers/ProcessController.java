@@ -32,9 +32,13 @@ public class ProcessController {
         return "redirect:/adduser";
     }
     @RequestMapping(value = "/addMaterialValue", method = RequestMethod.POST)
-    public String addUser(@RequestParam(name = "name", defaultValue = "No Name")String name,
-                          @RequestParam(name = "cost", defaultValue = "0") int cost){
-        DBManager.addMaterialValue(new MaterialValues(null, name, cost));
+    public String addMaterialValue(@RequestParam(name = "name", defaultValue = "No Name")String name,
+                          @RequestParam(name = "cost", defaultValue = "0") int cost
+    //                               ,@RequestParam(name = "person") String person
+                                   )
+    {
+        Person.addMaterialValues(new MaterialValues(null, name, cost));
+
 
         return "redirect:/addMaterialValue";
     }

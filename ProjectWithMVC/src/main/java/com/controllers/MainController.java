@@ -25,8 +25,8 @@ public class MainController {
         return mw;
     }
 
-    @RequestMapping(value = "addMaterialValue/{userId}", method = RequestMethod.GET)
-    public ModelAndView addMaterialValuesPage(){
+    @RequestMapping(value = "addMaterialValue", method = RequestMethod.GET)
+    public ModelAndView addMaterialValuePage(){
         ArrayList<MaterialValues>allMV = DBManager.getAllMaterialValues();
         ModelAndView mw = new ModelAndView("addMaterialValue");
         mw.addObject("materialValues", allMV);
