@@ -1,6 +1,7 @@
 package com.controllers;
 
-import com.db.DBManager;
+import com.db.MaterialValueDAO;
+import com.db.PersonDAO;
 import com.entites.MaterialValues;
 import com.entites.Person;
 import org.springframework.stereotype.Controller;
@@ -27,7 +28,7 @@ public class ProcessController {
     public String addUser(@RequestParam(name = "name", defaultValue = "No Name")String name,
                           @RequestParam(name = "surname", required = false, defaultValue = "No SurName") String surName,
                           @RequestParam(name = "patronymic", required = false, defaultValue = "No Patronymic") String patronymic){
-        DBManager.addPerson(new Person(null, name, surName, patronymic));
+        PersonDAO.addPerson(new Person(null, name, surName, patronymic));
 
         return "redirect:/adduser";
     }
@@ -37,7 +38,7 @@ public class ProcessController {
     //                               ,@RequestParam(name = "person") String person
                                    )
     {
-        Person.addMaterialValues(new MaterialValues(null, name, cost));
+        MaterialValueDAO.addMV(new MaterialValues(null, name, cost));
 
 
         return "redirect:/addMaterialValue";

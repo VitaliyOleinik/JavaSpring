@@ -1,4 +1,4 @@
-<%@ page import="com.db.DBManager" %><%--
+<%@ page import="com.db.MaterialValueDAO" %><%--
   Created by IntelliJ IDEA.
   User: Mi Book
   Date: 3/7/2021

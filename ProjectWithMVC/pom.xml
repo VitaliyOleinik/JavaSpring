@@ -20,6 +20,7 @@
         <jdbc.version>8.0.18</jdbc.version>
         <hibernate.version>5.4.4.Final</hibernate.version>
         <spring.orm>5.1.6.RELEASE</spring.orm>
+        <lombok.version>1.18.10</lombok.version>
     </properties>
     <dependencies>
         <dependency>
@@ -59,6 +60,14 @@
             <artifactId>spring-orm</artifactId>
             <version>5.1.6.RELEASE</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

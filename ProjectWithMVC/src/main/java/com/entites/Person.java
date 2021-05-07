@@ -1,23 +1,46 @@
 package com.entites;
-
+import lombok.*;
+import javax.persistence.*;
 import java.util.ArrayList;
 
+@Entity
+@Table(name = "person")
+@Data
+@Getter
+@Setter
+@ToString
 public class Person {
+    // @GeneratedValue - указывает, что данное свойство будет создаваться согласно указанной стратегии.
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+
+    @Column(name = "name", length = 200)
     private String name;
+
+    @Column(name = "surname", length = 200)
     private String surname;
+
+    @Column(name = "patronymic", length = 200)
     private String patronymic;
+
+    @Column(name = "counter")
     private static int cnt = 0;
+
+    @Column(name = "total_cost")
     private int totalCost;
+
     private static final ArrayList<MaterialValues> personMaterialValues = new ArrayList<>(10);
     private static int sizeOfMV = 0;
 
-    public Person(Long id, String name, String surname, String patronymic, int cnt, int totalCost) {
+    public Person() {}
+
+    public Person(Long id, String name, String surname, String patronymic, int totalCost) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.patronymic = patronymic;
-        Person.cnt = cnt;
         this.totalCost = totalCost;
     }
 

@@ -1,9 +1,30 @@
 package com.entites;
 
+import lombok.*;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "material_value")
+@Data
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
 public class MaterialValues {
+    // @GeneratedValue - указывает, что данное свойство будет создаваться согласно указанной стратегии.
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+
+    @Column(name = "name", length = 200)
     private String name;
+
+    @Column(name = "cost")
     private int cost;
+
+    @Column(name = "total")
     private int total;
 
     public MaterialValues(Long id, String name, int cost, int total) {

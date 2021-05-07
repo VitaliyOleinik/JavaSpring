@@ -1,6 +1,7 @@
 package com.controllers;
 
-import com.db.DBManager;
+import com.db.MaterialValueDAO;
+import com.db.PersonDAO;
 import com.entites.MaterialValues;
 import com.entites.Person;
 import org.springframework.stereotype.Controller;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class MainController {
@@ -18,7 +20,7 @@ public class MainController {
     // если обращаемся к этой ссылке, то запускатся этот метод
     public ModelAndView indexPage(){
 //        ArrayList<User>allUsers = DBManager.getAllusers();
-        ArrayList<Person>allPersons = DBManager.getAllPersons();
+        List<Person> allPersons = PersonDAO.getAllPersons();
         // путь к jsp
         ModelAndView mw = new ModelAndView("index");
         mw.addObject("users", allPersons);
@@ -27,7 +29,7 @@ public class MainController {
 
     @RequestMapping(value = "addMaterialValue", method = RequestMethod.GET)
     public ModelAndView addMaterialValuePage(){
-        ArrayList<MaterialValues>allMV = DBManager.getAllMaterialValues();
+        List<MaterialValues>allMV = MaterialValueDAO.getAllMaterialValues();
         ModelAndView mw = new ModelAndView("addMaterialValue");
         mw.addObject("materialValues", allMV);
         return mw;
@@ -47,7 +49,7 @@ public class MainController {
 
     @RequestMapping(value = "/readmore/{userId}", method = RequestMethod.GET)
     public ModelAndView readMore(@PathVariable(name = "userId") Long id){
-        Person person = DBManager.getPersonById(id);
+        Person person = PersonDAO.getPerson(id);
         ModelAndView mw = new ModelAndView("readMore");
         mw.addObject("person", person);
         return mw;
