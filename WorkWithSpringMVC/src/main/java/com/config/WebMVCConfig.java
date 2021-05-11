@@ -7,15 +7,16 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-@Configuration
+@Configuration // Конфигурационный класс
 @EnableWebMvc
-@ComponentScan(basePackages = {"com"})
-public class WebMVCConfig implements WebMvcConfigurer {
+@ComponentScan(basePackages = {"com"})  // Основной пакет
+public class WebMVCConfig implements WebMvcConfigurer { // имплементирую WebMvcConf
     @Bean
     public InternalResourceViewResolver resolver(){
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-        resolver.setPrefix("/WEB-INF/views/");
-        resolver.setSuffix(".jsp");
+        // устанавливаю префикс и суффикс
+        resolver.setPrefix("/WEB-INF/views/"); // нахождение view
+        resolver.setSuffix(".jsp"); // тип файлов
         return resolver;
     }
 

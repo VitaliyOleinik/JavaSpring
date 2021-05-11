@@ -12,12 +12,14 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>My first page with Java Spring FrameWork</h1>
+<%--    <h1>${message}</h1>--%>
+<%--    <h1>${secondMessage}</h1>--%>
+<%--    <h1>${mySecondBean}</h1>--%>
     <a href="/about">ABOUT</a>
 
     <c:forEach items="${users}" var = "u">
         <h1>
-            ${u.id} - ${u.name} - ${u.surName} - ${u.age} years old <a href="readmore/${u.id}">Read More</a>
+            ${u.id} - ${u.name} - ${u.surname} - ${u.age} years old <a href="readmore/${u.id}">Read More</a>
         </h1>
     </c:forEach>
 
