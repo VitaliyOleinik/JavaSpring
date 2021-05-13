@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+
+    <mvc:annotation-driven />
+
+    <bean id="dbUtil" class="com.group11.db.DBUtil" init-method="init" scope="prototype">
+        <constructor-arg name="someParameter" value="The other data"/>
+        <constructor-arg name="nextParameter" value="34"/>
+        <property name="someParameter" value="The text data"/>
+    </bean>
+
+    <bean id="firstBean" class="com.group11.db.FirstBean">
+        <property name="someParam" value="Almaty"/>
+        <property name="someValue" value="234"/>
+    </bean>
+
+    <bean id = "firstBean2" class="com.group11.db.FirstBean">
+        <property name="someParam" value="Paris"/>
+        <property name="someValue" value="345"/>
+    </bean>
+
+    <bean id = "secondBean" class="com.group11.db.SecondBean">
+        <property name="theParam" value="Astana"/>
+        <property name="firstBean" ref="firstBean2"/>
+    </bean>
+
+    <bean id = "userBean" class="com.group11.beans.UserBean" init-method="connect">
+        <constructor-arg name="url" value="jdbc:mysql://localhost:3306/group11db?useUnicode=true&amp;serverTimezone=UTC&amp;characterEncoding=utf-8"/>
+        <constructor-arg name="password" value=""/>
+        <constructor-arg name="userName" value="root"/>
+    </bean>
+
+    <bean id = "myDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/group11db?useUnicode=true&amp;serverTimezone=UTC&amp;characterEncoding=utf-8" />
+        <property name="username" value="root" />
+        <property name="password" value="" />
+    </bean>
+
+    <bean id = "sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="myDataSource"/>
+        <property name="packagesToScan" value="com.group11.entities"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id = "itemBean" class="com.group11.beans.ItemBean">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <context:component-scan base-package="com.group11"></context:component-scan>
+</beans>
