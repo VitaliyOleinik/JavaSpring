@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ba8a8657-b466-45e8-9ea8-1bb9490095f8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ProjectWithMVC/src/main/java/com/config/WebMVCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectWithMVC/src/main/java/com/config/WebMVCConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/aboutPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/aboutPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/addMaterialValue.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/addMaterialValue.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/adduser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/adduser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/process.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/process.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/readMore.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectWithMVC/src/main/webapp/WEB-INF/views/readMore.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/artifacts/Group12FirstSpring_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_10_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_springframework_spring_aop_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_springframework_spring_beans_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_springframework_spring_context_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_springframework_spring_core_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_springframework_spring_expression_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_springframework_spring_orm_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_springframework_spring_test_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_springframework_spring_tx_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_springframework_spring_web_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithMVCExample/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/WorkWithMVCExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithMVCExample/WorkWithMVCExample.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithMVCExample/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithMVCExample/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithSpringMVC/src/main/java/com/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithSpringMVC/src/main/java/com/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithSpringMVC/src/main/java/com/db/DBManagerPhpMyAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithSpringMVC/src/main/java/com/db/DBManagerPhpMyAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithSpringMVC/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithSpringMVC/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithSpringMVC/target/WorkWithSpringMVC-1.0-SNAPSHOT/WEB-INF/classes/com/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithSpringMVC/target/WorkWithSpringMVC-1.0-SNAPSHOT/WEB-INF/classes/com/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithSpringMVC/target/WorkWithSpringMVC-1.0-SNAPSHOT/WEB-INF/classes/com/db/DBManagerPhpMyAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithSpringMVC/target/WorkWithSpringMVC-1.0-SNAPSHOT/WEB-INF/classes/com/db/DBManagerPhpMyAdmin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithSpringMVC/target/WorkWithSpringMVC-1.0-SNAPSHOT/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithSpringMVC/target/WorkWithSpringMVC-1.0-SNAPSHOT/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithSpringMVC/target/classes/com/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithSpringMVC/target/classes/com/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkWithSpringMVC/target/classes/com/db/DBManagerPhpMyAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkWithSpringMVC/target/classes/com/db/DBManagerPhpMyAdmin.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1uA6sGlsfzGDdgc19WHHHyU7DXA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../project-back_place_drinks" />
+  </component>
+  <component name="RunManager">
+    <configuration name="DrinGoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="DrinGo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.dringo.DrinGoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba8a8657-b466-45e8-9ea8-1bb9490095f8" name="Default Changelist" comment="" />
+      <created>1624096251895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624096251895</updated>
+      <workItem from="1624096253493" duration="5288000" />
+      <workItem from="1624204676455" duration="626000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

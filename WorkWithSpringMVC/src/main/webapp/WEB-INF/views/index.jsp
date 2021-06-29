@@ -16,6 +16,10 @@
 <%--    <h1>${secondMessage}</h1>--%>
 <%--    <h1>${mySecondBean}</h1>--%>
     <a href="/about">ABOUT</a>
+<form action="/search" method="get">
+    Name: <input type="text" name="name">
+    <button>SEARCH</button>
+</form>
 
     <c:forEach items="${users}" var = "u">
         <h1>

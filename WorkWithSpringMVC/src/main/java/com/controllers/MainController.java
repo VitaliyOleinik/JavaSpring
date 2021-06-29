@@ -51,6 +51,14 @@ public class MainController {
         return mw;
     }
 
+    @RequestMapping(value = "/search", method = RequestMethod.GET)
+    public ModelAndView searchPage(@PathVariable(name = "name") String name){
+        ModelAndView mw = new ModelAndView("search");
+        Users user = dbManagerPhpMyAdmin.getUserByName(name);
+        mw.addObject("searchuser", user);
+        return mw;
+    }
+
     @RequestMapping(value = "/readmore/{userId}", method = RequestMethod.GET)
     public ModelAndView readMore(@PathVariable(name = "userId") Long id){
         Users user = dbManagerPhpMyAdmin.getUserById(id);

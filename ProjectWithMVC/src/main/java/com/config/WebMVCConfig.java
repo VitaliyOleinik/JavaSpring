@@ -19,5 +19,4 @@ public class WebMVCConfig implements WebMvcConfigurer { // имплементи�
         resolver.setSuffix(".jsp"); // тип файлов
         return resolver;
     }
-
 }

@@ -63,4 +63,15 @@ class EmployeeController {
     void deleteEmployee(@PathVariable Long id) {
         repository.deleteById(id);
     }
+
+    @GetMapping("/employees/{id}")
+    EntityModel<Employee> one(@PathVariable Long id) {
+
+        Employee employee = repository.findById(id) //
+                .orElseThrow(() -> new EmployeeNotFoundException(id));
+
+        return EntityModel.of(employee, //
+                linkTo(methodOn(EmployeeController.class).one(id)).withSelfRel(),
+                linkTo(methodOn(EmployeeController.class).all()).withRel("employees"));
+    }
 }

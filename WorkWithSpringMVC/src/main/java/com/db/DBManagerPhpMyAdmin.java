@@ -76,4 +76,25 @@ public class DBManagerPhpMyAdmin {
         }
         return user;
     }
+
+    public Users getUserByName(String name){
+        Users user = null;
+        try{
+            PreparedStatement statement = connection.prepareStatement("select * from users where name = ?");
+            statement.setString(1, name);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()){
+                user = (new Users(
+                        resultSet.getLong("id"),
+                        resultSet.getString("name"),
+                        resultSet.getString("surname"),
+                        resultSet.getInt("age")
+                ));
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return user;
+    }
 }
